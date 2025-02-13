@@ -84,7 +84,6 @@
             this.muunnaBT.TabIndex = 7;
             this.muunnaBT.Text = "Muunna";
             this.muunnaBT.UseVisualStyleBackColor = true;
-
             // 
             // celsiusRB
             // 

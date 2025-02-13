@@ -7,16 +7,6 @@ namespace WinFormsApp1
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void muunnaBT_Click(object sender, EventArgs e)
         {
             double vastaus;
@@ -27,7 +17,7 @@ namespace WinFormsApp1
                 vastausLB.Text = vastaus + "Celsiusta";
                 vastausLB.Visible = true;
             }
-            else if (FahrenheitRB.Checked )
+            else if (FahrenheitRB.Checked)
             {
                 vastaus = (asteet - 32) / 1.8;
                 vastausLB.Text = vastaus + "Fahrenheitia";
@@ -35,7 +25,7 @@ namespace WinFormsApp1
             }
             else
             {
-                vastausLB.Text = "Virheellinen lukema"
+                vastausLB.Text = "Virheellinen lukema";
                 vastausLB.Visible = true;
             }
 
