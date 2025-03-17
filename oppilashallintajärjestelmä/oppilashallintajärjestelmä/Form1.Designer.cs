@@ -44,8 +44,13 @@
             this.tallennaBT = new System.Windows.Forms.Button();
             this.PäivitäBT = new System.Windows.Forms.Button();
             this.poistaBT = new System.Windows.Forms.Button();
+<<<<<<< HEAD
             this.tietotauluDG = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.tietotauluDG)).BeginInit();
+=======
+            this.tietotauluDT = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.tietotauluDT)).BeginInit();
+>>>>>>> 8de8d1a07121ea64a1f86481f8ad3da6c2e43259
             this.SuspendLayout();
             // 
             // IDLB
@@ -187,7 +192,10 @@
             this.PäivitäBT.TabIndex = 14;
             this.PäivitäBT.Text = "Päivitä";
             this.PäivitäBT.UseVisualStyleBackColor = true;
+<<<<<<< HEAD
             this.PäivitäBT.Click += new System.EventHandler(this.PäivitäBT_Click);
+=======
+>>>>>>> 8de8d1a07121ea64a1f86481f8ad3da6c2e43259
             // 
             // poistaBT
             // 
@@ -198,6 +206,7 @@
             this.poistaBT.TabIndex = 15;
             this.poistaBT.Text = "Poista";
             this.poistaBT.UseVisualStyleBackColor = true;
+<<<<<<< HEAD
             this.poistaBT.Click += new System.EventHandler(this.poistaBT_Click);
             // 
             // tietotauluDG
@@ -208,13 +217,27 @@
             this.tietotauluDG.Size = new System.Drawing.Size(798, 284);
             this.tietotauluDG.TabIndex = 16;
             this.tietotauluDG.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tietotauluDG_CellContentClick);
+=======
+            // 
+            // tietotauluDT
+            // 
+            this.tietotauluDT.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tietotauluDT.Location = new System.Drawing.Point(27, 242);
+            this.tietotauluDT.Name = "tietotauluDT";
+            this.tietotauluDT.Size = new System.Drawing.Size(798, 284);
+            this.tietotauluDT.TabIndex = 16;
+>>>>>>> 8de8d1a07121ea64a1f86481f8ad3da6c2e43259
             // 
             // ohjFORM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(849, 589);
+<<<<<<< HEAD
             this.Controls.Add(this.tietotauluDG);
+=======
+            this.Controls.Add(this.tietotauluDT);
+>>>>>>> 8de8d1a07121ea64a1f86481f8ad3da6c2e43259
             this.Controls.Add(this.poistaBT);
             this.Controls.Add(this.PäivitäBT);
             this.Controls.Add(this.tallennaBT);
@@ -234,7 +257,11 @@
             this.Name = "ohjFORM";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.ohjFORM_Load);
+<<<<<<< HEAD
             ((System.ComponentModel.ISupportInitialize)(this.tietotauluDG)).EndInit();
+=======
+            ((System.ComponentModel.ISupportInitialize)(this.tietotauluDT)).EndInit();
+>>>>>>> 8de8d1a07121ea64a1f86481f8ad3da6c2e43259
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -258,7 +285,11 @@
         private System.Windows.Forms.Button tallennaBT;
         private System.Windows.Forms.Button PäivitäBT;
         private System.Windows.Forms.Button poistaBT;
+<<<<<<< HEAD
         private System.Windows.Forms.DataGridView tietotauluDG;
+=======
+        private System.Windows.Forms.DataGridView tietotauluDT;
+>>>>>>> 8de8d1a07121ea64a1f86481f8ad3da6c2e43259
     }
 }
 

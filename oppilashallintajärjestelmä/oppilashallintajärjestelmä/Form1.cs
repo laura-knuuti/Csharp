@@ -20,17 +20,31 @@ namespace oppilashallintajärjestelmä
 
         private void ohjFORM_Load(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             tietotauluDG.DataSource = opiskelija.haeOpiskelijat();
+=======
+            tietotauluDT.DataSource = opiskelija.haeOpiskelijat();
+
+>>>>>>> 8de8d1a07121ea64a1f86481f8ad3da6c2e43259
         }
 
         private void tyhjennaTB_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             IDTB.Text = "";
             etunimiTB.Text = "";
             sukunimiTB.Text = "";
             puhelinTB.Text = "";
             sahkopostiTB.Text = "";
             opiskelijanroTB.Text = "";
+=======
+            IDTB = "";
+            etunimiTB = "";
+            sukunimiTB = "";
+            puhelinTB = "";
+            sahkopostiTB = "";
+            opiskelijanroTB = "";
+>>>>>>> 8de8d1a07121ea64a1f86481f8ad3da6c2e43259
         }
 
         private void tallennaBT_Click(object sender, EventArgs e)
@@ -42,12 +56,17 @@ namespace oppilashallintajärjestelmä
             int oNro = Int32.Parse(opiskelijanroTB.Text);
 
             if (enimi.Trim().Equals("") || snimi.Trim().Equals("") || puhelin.Trim().Equals("") || email.Trim().Equals("") || oNro.Equals(""))
+<<<<<<< HEAD
             {
+=======
+                    {
+>>>>>>> 8de8d1a07121ea64a1f86481f8ad3da6c2e43259
                 MessageBox.Show("Virhe - Vaaditut kentät - Etu- ja sukunimi, puhelin, sähköposti ja opiskelijanumero", "Tyhjä kenttä", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
                 Boolean lisaaAsiakas = opiskelija.lisaaOpiskelija(enimi, snimi, puhelin, email, oNro);
+<<<<<<< HEAD
                 if (lisaaAsiakas)
                 {
                     MessageBox.Show("Uusi opiskelija lisätty onnistuneesti", "Opiskelijan lisäys", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -122,6 +141,10 @@ namespace oppilashallintajärjestelmä
             puhelinTB.Text = tietotauluDG.CurrentRow.Cells[3].Value.ToString();
             sahkopostiTB.Text = tietotauluDG.CurrentRow.Cells[4].Value.ToString();
             opiskelijanroTB.Text = tietotauluDG.CurrentRow.Cells[5].Value.ToString();
+=======
+
+            }
+>>>>>>> 8de8d1a07121ea64a1f86481f8ad3da6c2e43259
 
         }
     }
