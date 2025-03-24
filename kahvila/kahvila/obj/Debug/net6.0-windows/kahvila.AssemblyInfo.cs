@@ -14,7 +14,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("kahvila")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< HEAD
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+01e5f63b2f33ef134e14833524af81b8146a2858")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+>>>>>>> f26e103f67247c5f9c7fb11a1c765e528c52e2c0
 [assembly: System.Reflection.AssemblyProductAttribute("kahvila")]
 [assembly: System.Reflection.AssemblyTitleAttribute("kahvila")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

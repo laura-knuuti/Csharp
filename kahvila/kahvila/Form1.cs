@@ -1,5 +1,6 @@
 namespace kahvila
 {
+<<<<<<< HEAD
     public partial class ruokalistaForm : Form
     {
         public ruokalistaForm()
@@ -549,3 +550,13 @@ namespace kahvila
         }
     }
 }
+=======
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+    }
+}
+>>>>>>> f26e103f67247c5f9c7fb11a1c765e528c52e2c0

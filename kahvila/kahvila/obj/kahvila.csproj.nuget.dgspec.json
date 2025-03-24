@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\laura\\source\\repos\\kahvila\\kahvila\\kahvila.csproj": {}
   },
   "projects": {
@@ -12,12 +13,29 @@
         "projectPath": "C:\\Users\\laura\\source\\repos\\kahvila\\kahvila\\kahvila.csproj",
         "packagesPath": "C:\\Users\\laura\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\laura\\source\\repos\\kahvila\\kahvila\\obj\\",
+=======
+    "C:\\Users\\laura.knuuti\\source\\Kevät2025\\Csharp\\kahvila\\kahvila\\kahvila.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\laura.knuuti\\source\\Kevät2025\\Csharp\\kahvila\\kahvila\\kahvila.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\laura.knuuti\\source\\Kevät2025\\Csharp\\kahvila\\kahvila\\kahvila.csproj",
+        "projectName": "kahvila",
+        "projectPath": "C:\\Users\\laura.knuuti\\source\\Kevät2025\\Csharp\\kahvila\\kahvila\\kahvila.csproj",
+        "packagesPath": "C:\\Users\\laura.knuuti\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\laura.knuuti\\source\\Kevät2025\\Csharp\\kahvila\\kahvila\\obj\\",
+>>>>>>> f26e103f67247c5f9c7fb11a1c765e528c52e2c0
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
+<<<<<<< HEAD
           "C:\\Users\\laura\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+          "C:\\Users\\laura.knuuti\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> f26e103f67247c5f9c7fb11a1c765e528c52e2c0
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +44,10 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+<<<<<<< HEAD
+=======
+          "C:\\Program Files\\dotnet\\library-packs": {},
+>>>>>>> f26e103f67247c5f9c7fb11a1c765e528c52e2c0
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -38,6 +60,7 @@
           "warnAsError": [
             "NU1605"
           ]
+<<<<<<< HEAD
         },
         "restoreAuditProperties": {
           "enableAudit": "true",
@@ -45,6 +68,9 @@
           "auditMode": "direct"
         },
         "SdkAnalysisLevel": "9.0.200"
+=======
+        }
+>>>>>>> f26e103f67247c5f9c7fb11a1c765e528c52e2c0
       },
       "frameworks": {
         "net6.0-windows7.0": {
@@ -68,7 +94,11 @@
               "privateAssets": "none"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200\\RuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+>>>>>>> f26e103f67247c5f9c7fb11a1c765e528c52e2c0
         }
       }
     }

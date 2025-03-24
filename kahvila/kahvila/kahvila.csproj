@@ -8,6 +8,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+<<<<<<< HEAD
   <ItemGroup>
     <Compile Update="Properties\Resources.Designer.cs">
       <DesignTime>True</DesignTime>
@@ -23,4 +24,6 @@
     </EmbeddedResource>
   </ItemGroup>
 
+=======
+>>>>>>> f26e103f67247c5f9c7fb11a1c765e528c52e2c0
 </Project>
