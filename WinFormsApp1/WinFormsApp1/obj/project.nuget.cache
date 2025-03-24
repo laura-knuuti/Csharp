@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "QgHBSKsSVaC4P8vhV3qKphc9kIWYef7WJMshlGQ3CSk8YqyiIVcpSUGTfvqjZHK8RIWjudB3a2Tslr1dakrwIw==",
+  "dgSpecHash": "L3R22CRO+FU=",
   "success": true,
-  "projectFilePath": "C:\\Users\\jyrili.KEUDA\\source\\repos\\opiskelijat\\Laura\\Csharp\\WinFormsApp1\\WinFormsApp1\\WinFormsApp1.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\laura\\source\\repos\\WinFormsApp1\\WinFormsApp1\\WinFormsApp1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\laura\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.20\\microsoft.windowsdesktop.app.ref.7.0.20.nupkg.sha512",
+    "C:\\Users\\laura\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.20\\microsoft.netcore.app.ref.7.0.20.nupkg.sha512",
+    "C:\\Users\\laura\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.20\\microsoft.aspnetcore.app.ref.7.0.20.nupkg.sha512",
+    "C:\\Users\\laura\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.20\\microsoft.netcore.app.host.win-x64.7.0.20.nupkg.sha512"
+  ],
   "logs": []
 }
