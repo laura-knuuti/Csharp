@@ -91,14 +91,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkCyan;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 533);
             this.Controls.Add(this.salasanaLB);
             this.Controls.Add(this.kayttajaLB);
             this.Controls.Add(this.salasanaTB);
             this.Controls.Add(this.kayttajaTB);
             this.Controls.Add(this.button1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Kirjautumisikkuna";
             this.ResumeLayout(false);
             this.PerformLayout();
 

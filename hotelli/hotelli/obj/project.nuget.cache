@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0uvP1bNnByJzhtSYM7Xsk031OJYQ1kWpN51VfbfTiT63UEv9LH6HhU3q9Hvfziosy0cZ0DU5ktPT/9FEDsa23A==",
+  "dgSpecHash": "dS9mJBx8soebl9E/gVS3RnURIlLJ0k6gBMGMqdzaQYPaUYs/79KnEoQvVUMxPhlmSmndecZ0IYksHqh0Zi2hfw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\laura.knuuti\\source\\repos\\hotelli\\hotelli\\hotelli.csproj",
+  "projectFilePath": "C:\\Users\\laura.knuuti\\source\\Csharp\\hotelli\\hotelli\\hotelli.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\laura.knuuti\\.nuget\\packages\\bouncycastle.cryptography\\2.3.1\\bouncycastle.cryptography.2.3.1.nupkg.sha512",
     "C:\\Users\\laura.knuuti\\.nuget\\packages\\google.protobuf\\3.26.1\\google.protobuf.3.26.1.nupkg.sha512",

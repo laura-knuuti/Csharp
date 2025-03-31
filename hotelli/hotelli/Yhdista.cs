@@ -3,17 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+//Muista nämä
 using MySql.Data.MySqlClient;
+using System.Data;
 
 
 //Class joka yhdistää SQL-tietokantaan
-
 
 namespace hotelli
 {
     internal class Yhdista
     {
-        //datasource + port = mistä haetaan database = käytettävä tietokanta
+        //datasource + port = sijainti + portti database = käytettävä tietokanta
         //Vältä "tosihommissa" oletuksia eli salasana = root ja password = tyhjä...
       private readonly MySqlConnection yhteys = new MySqlConnection  ("datasource=localhost; port=3306; username=root; password=; database=hotelli");
 
@@ -31,7 +32,7 @@ namespace hotelli
             }
         }
 
-        //funktio yhteden sulkemista varten
+        //funktio yhteyden sulkemista varten
         public void suljeYhteys()
         {
             if (yhteys.State == ConnectionState.Open)
