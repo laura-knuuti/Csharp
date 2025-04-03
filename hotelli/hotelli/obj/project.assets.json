@@ -15,6 +15,15 @@
           }
         }
       },
+      "Eramake.eCryptography/1.1.6": {
+        "type": "package",
+        "compile": {
+          "lib/net45/eCryptography.dll": {}
+        },
+        "runtime": {
+          "lib/net45/eCryptography.dll": {}
+        }
+      },
       "Google.Protobuf/3.26.1": {
         "type": "package",
         "compile": {
@@ -574,6 +583,18 @@
         "lib/netstandard2.0/BouncyCastle.Cryptography.dll",
         "lib/netstandard2.0/BouncyCastle.Cryptography.xml",
         "packageIcon.png"
+      ]
+    },
+    "Eramake.eCryptography/1.1.6": {
+      "sha512": "nyj1noN2q/hAKz3waqTLZnu6fGgTpyd0Z7pOSgwwYTF1WUGbKiXjTr2jChWHSef3J3QyHMNh8EjtMWb7AOkecw==",
+      "type": "package",
+      "path": "eramake.ecryptography/1.1.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "eramake.ecryptography.1.1.6.nupkg.sha512",
+        "eramake.ecryptography.nuspec",
+        "lib/net45/eCryptography.dll"
       ]
     },
     "Google.Protobuf/3.26.1": {
@@ -1787,6 +1808,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
+      "Eramake.eCryptography >= 1.1.6",
       "MySql.Data >= 9.2.0",
       "System.Data.SqlClient >= 4.9.0"
     ]
@@ -1836,6 +1858,10 @@
       "net6.0-windows7.0": {
         "targetAlias": "net6.0-windows",
         "dependencies": {
+          "Eramake.eCryptography": {
+            "target": "Package",
+            "version": "[1.1.6, )"
+          },
           "MySql.Data": {
             "target": "Package",
             "version": "[9.2.0, )"
@@ -1867,5 +1893,17 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Eramake.eCryptography 1.1.6' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Eramake.eCryptography",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    }
+  ]
 }

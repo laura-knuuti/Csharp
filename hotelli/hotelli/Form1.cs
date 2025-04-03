@@ -21,6 +21,7 @@ namespace hotelli
             DataTable taulu = new DataTable();
             MySqlDataAdapter adapteri = new MySqlDataAdapter();
             MySqlCommand komento = new MySqlCommand();
+
             //tehd‰‰n kysely
             //SELECT = valitaan kent‰t, FROM = taulun nimi WHERE = ehto
             String kysely = "SELECT kayttajanimi, salasana FROM asiakkaat WHERE kayttajanimi = @kn AND Salasana = @ss";

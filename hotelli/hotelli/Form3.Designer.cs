@@ -29,6 +29,16 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.tyhjennaBT = new System.Windows.Forms.Button();
+            this.poistaBT = new System.Windows.Forms.Button();
+            this.muokkaaBT = new System.Windows.Forms.Button();
+            this.asiakasBT = new System.Windows.Forms.Button();
+            this.salasanaTB = new System.Windows.Forms.TextBox();
+            this.kayttajatunnusTB = new System.Windows.Forms.TextBox();
+            this.postitoimipaikkaTB = new System.Windows.Forms.TextBox();
+            this.postinumeroTB = new System.Windows.Forms.TextBox();
+            this.lahiosoiteTB = new System.Windows.Forms.TextBox();
+            this.sukunimiTB = new System.Windows.Forms.TextBox();
             this.etunimiTB = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
@@ -43,20 +53,10 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.sukunimiTB = new System.Windows.Forms.TextBox();
-            this.lahiosoiteTB = new System.Windows.Forms.TextBox();
-            this.postinumeroTB = new System.Windows.Forms.TextBox();
-            this.postitoimipaikkaTB = new System.Windows.Forms.TextBox();
-            this.kayttajatunnusTB = new System.Windows.Forms.TextBox();
-            this.salasanaTB = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.asiakasBT = new System.Windows.Forms.Button();
-            this.muokkaaBT = new System.Windows.Forms.Button();
-            this.poistaBT = new System.Windows.Forms.Button();
-            this.tyhjennaBT = new System.Windows.Forms.Button();
+            this.asiakkaatDG = new System.Windows.Forms.DataGridView();
             this.otsikkoLB = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiakkaatDG)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -91,6 +91,96 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
+            // 
+            // tyhjennaBT
+            // 
+            this.tyhjennaBT.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.tyhjennaBT.Location = new System.Drawing.Point(239, 433);
+            this.tyhjennaBT.Name = "tyhjennaBT";
+            this.tyhjennaBT.Size = new System.Drawing.Size(121, 52);
+            this.tyhjennaBT.TabIndex = 24;
+            this.tyhjennaBT.Text = "Tyhjennä kentät";
+            this.tyhjennaBT.UseVisualStyleBackColor = true;
+            // 
+            // poistaBT
+            // 
+            this.poistaBT.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.poistaBT.Location = new System.Drawing.Point(448, 375);
+            this.poistaBT.Name = "poistaBT";
+            this.poistaBT.Size = new System.Drawing.Size(121, 31);
+            this.poistaBT.TabIndex = 23;
+            this.poistaBT.Text = "Poista";
+            this.poistaBT.UseVisualStyleBackColor = true;
+            this.poistaBT.Click += new System.EventHandler(this.poistaBT_Click);
+            // 
+            // muokkaaBT
+            // 
+            this.muokkaaBT.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.muokkaaBT.Location = new System.Drawing.Point(239, 375);
+            this.muokkaaBT.Name = "muokkaaBT";
+            this.muokkaaBT.Size = new System.Drawing.Size(121, 31);
+            this.muokkaaBT.TabIndex = 22;
+            this.muokkaaBT.Text = "Muokkaa";
+            this.muokkaaBT.UseVisualStyleBackColor = true;
+            this.muokkaaBT.Click += new System.EventHandler(this.muokkaaBT_Click);
+            // 
+            // asiakasBT
+            // 
+            this.asiakasBT.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.asiakasBT.Location = new System.Drawing.Point(28, 375);
+            this.asiakasBT.Name = "asiakasBT";
+            this.asiakasBT.Size = new System.Drawing.Size(121, 31);
+            this.asiakasBT.TabIndex = 21;
+            this.asiakasBT.Text = "Lisää asiakas";
+            this.asiakasBT.UseVisualStyleBackColor = true;
+            // 
+            // salasanaTB
+            // 
+            this.salasanaTB.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.salasanaTB.Location = new System.Drawing.Point(270, 304);
+            this.salasanaTB.Name = "salasanaTB";
+            this.salasanaTB.Size = new System.Drawing.Size(311, 33);
+            this.salasanaTB.TabIndex = 20;
+            // 
+            // kayttajatunnusTB
+            // 
+            this.kayttajatunnusTB.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.kayttajatunnusTB.Location = new System.Drawing.Point(270, 265);
+            this.kayttajatunnusTB.Name = "kayttajatunnusTB";
+            this.kayttajatunnusTB.Size = new System.Drawing.Size(311, 33);
+            this.kayttajatunnusTB.TabIndex = 19;
+            // 
+            // postitoimipaikkaTB
+            // 
+            this.postitoimipaikkaTB.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.postitoimipaikkaTB.Location = new System.Drawing.Point(270, 226);
+            this.postitoimipaikkaTB.Name = "postitoimipaikkaTB";
+            this.postitoimipaikkaTB.Size = new System.Drawing.Size(311, 33);
+            this.postitoimipaikkaTB.TabIndex = 18;
+            // 
+            // postinumeroTB
+            // 
+            this.postinumeroTB.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.postinumeroTB.Location = new System.Drawing.Point(270, 188);
+            this.postinumeroTB.Name = "postinumeroTB";
+            this.postinumeroTB.Size = new System.Drawing.Size(311, 33);
+            this.postinumeroTB.TabIndex = 17;
+            // 
+            // lahiosoiteTB
+            // 
+            this.lahiosoiteTB.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lahiosoiteTB.Location = new System.Drawing.Point(270, 149);
+            this.lahiosoiteTB.Name = "lahiosoiteTB";
+            this.lahiosoiteTB.Size = new System.Drawing.Size(311, 33);
+            this.lahiosoiteTB.TabIndex = 16;
+            // 
+            // sukunimiTB
+            // 
+            this.sukunimiTB.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.sukunimiTB.Location = new System.Drawing.Point(270, 110);
+            this.sukunimiTB.Name = "sukunimiTB";
+            this.sukunimiTB.Size = new System.Drawing.Size(311, 33);
+            this.sukunimiTB.TabIndex = 15;
             // 
             // etunimiTB
             // 
@@ -243,102 +333,14 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Etunimi:";
             // 
-            // sukunimiTB
+            // asiakkaatDG
             // 
-            this.sukunimiTB.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.sukunimiTB.Location = new System.Drawing.Point(270, 110);
-            this.sukunimiTB.Name = "sukunimiTB";
-            this.sukunimiTB.Size = new System.Drawing.Size(311, 33);
-            this.sukunimiTB.TabIndex = 15;
-            // 
-            // lahiosoiteTB
-            // 
-            this.lahiosoiteTB.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lahiosoiteTB.Location = new System.Drawing.Point(270, 149);
-            this.lahiosoiteTB.Name = "lahiosoiteTB";
-            this.lahiosoiteTB.Size = new System.Drawing.Size(311, 33);
-            this.lahiosoiteTB.TabIndex = 16;
-            // 
-            // postinumeroTB
-            // 
-            this.postinumeroTB.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.postinumeroTB.Location = new System.Drawing.Point(270, 188);
-            this.postinumeroTB.Name = "postinumeroTB";
-            this.postinumeroTB.Size = new System.Drawing.Size(311, 33);
-            this.postinumeroTB.TabIndex = 17;
-            // 
-            // postitoimipaikkaTB
-            // 
-            this.postitoimipaikkaTB.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.postitoimipaikkaTB.Location = new System.Drawing.Point(270, 226);
-            this.postitoimipaikkaTB.Name = "postitoimipaikkaTB";
-            this.postitoimipaikkaTB.Size = new System.Drawing.Size(311, 33);
-            this.postitoimipaikkaTB.TabIndex = 18;
-            // 
-            // kayttajatunnusTB
-            // 
-            this.kayttajatunnusTB.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.kayttajatunnusTB.Location = new System.Drawing.Point(270, 265);
-            this.kayttajatunnusTB.Name = "kayttajatunnusTB";
-            this.kayttajatunnusTB.Size = new System.Drawing.Size(311, 33);
-            this.kayttajatunnusTB.TabIndex = 19;
-            // 
-            // salasanaTB
-            // 
-            this.salasanaTB.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.salasanaTB.Location = new System.Drawing.Point(270, 304);
-            this.salasanaTB.Name = "salasanaTB";
-            this.salasanaTB.Size = new System.Drawing.Size(311, 33);
-            this.salasanaTB.TabIndex = 20;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(683, 96);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(415, 506);
-            this.dataGridView1.TabIndex = 21;
-            // 
-            // asiakasBT
-            // 
-            this.asiakasBT.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.asiakasBT.Location = new System.Drawing.Point(28, 375);
-            this.asiakasBT.Name = "asiakasBT";
-            this.asiakasBT.Size = new System.Drawing.Size(121, 31);
-            this.asiakasBT.TabIndex = 21;
-            this.asiakasBT.Text = "Lisää asiakas";
-            this.asiakasBT.UseVisualStyleBackColor = true;
-            // 
-            // muokkaaBT
-            // 
-            this.muokkaaBT.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.muokkaaBT.Location = new System.Drawing.Point(239, 375);
-            this.muokkaaBT.Name = "muokkaaBT";
-            this.muokkaaBT.Size = new System.Drawing.Size(121, 31);
-            this.muokkaaBT.TabIndex = 22;
-            this.muokkaaBT.Text = "Muokkaa";
-            this.muokkaaBT.UseVisualStyleBackColor = true;
-            // 
-            // poistaBT
-            // 
-            this.poistaBT.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.poistaBT.Location = new System.Drawing.Point(448, 375);
-            this.poistaBT.Name = "poistaBT";
-            this.poistaBT.Size = new System.Drawing.Size(121, 31);
-            this.poistaBT.TabIndex = 23;
-            this.poistaBT.Text = "Poista";
-            this.poistaBT.UseVisualStyleBackColor = true;
-            // 
-            // tyhjennaBT
-            // 
-            this.tyhjennaBT.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.tyhjennaBT.Location = new System.Drawing.Point(239, 433);
-            this.tyhjennaBT.Name = "tyhjennaBT";
-            this.tyhjennaBT.Size = new System.Drawing.Size(121, 52);
-            this.tyhjennaBT.TabIndex = 24;
-            this.tyhjennaBT.Text = "Tyhjennä kentät";
-            this.tyhjennaBT.UseVisualStyleBackColor = true;
+            this.asiakkaatDG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.asiakkaatDG.Location = new System.Drawing.Point(683, 96);
+            this.asiakkaatDG.Name = "asiakkaatDG";
+            this.asiakkaatDG.RowTemplate.Height = 25;
+            this.asiakkaatDG.Size = new System.Drawing.Size(415, 506);
+            this.asiakkaatDG.TabIndex = 21;
             // 
             // otsikkoLB
             // 
@@ -359,13 +361,13 @@
             this.BackColor = System.Drawing.Color.Teal;
             this.ClientSize = new System.Drawing.Size(1143, 658);
             this.Controls.Add(this.otsikkoLB);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.asiakkaatDG);
             this.Controls.Add(this.groupBox1);
             this.Name = "AsiakkaidenHallinta";
-            this.Text = "Form3";
+            this.Text = "Asiakkaiden hallinta";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiakkaatDG)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -398,7 +400,7 @@
         private Button poistaBT;
         private Button muokkaaBT;
         private Button asiakasBT;
-        private DataGridView dataGridView1;
+        private DataGridView asiakkaatDG;
         private Label otsikkoLB;
     }
 }

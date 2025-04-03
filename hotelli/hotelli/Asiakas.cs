@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 //taas nämä
 using MySql.Data.MySqlClient;
 using System.Data;
+//salasanaa varten
+using Eramake;
 
 namespace hotelli
 {
@@ -19,7 +21,7 @@ namespace hotelli
             MySqlCommand komento = new MySqlCommand();
             String lisayskysely = "INSERT INTO asiakkaat" +
             "(kayttajanimi, Etunimi, Sukunimi, Lahiosoite, Postinumero, Postitoimipaikka, Salasana) " +
-            "VALUES (@ktu @enm, @snm, @oso, @pno, @ptp, @ssa); ";
+            "VALUES (@ktu, @enm, @snm, @oso, @pno, @ptp, @ssa); ";
             komento.CommandText = lisayskysely;
             komento.Connection = yhteys.OtaYhteys();
             komento.Parameters.Add("@enm", MySqlDbType.VarChar).Value = enimi;
@@ -33,27 +35,50 @@ namespace hotelli
             }
             else
             {
-                komento.Parameters.Add("ktu",MySqlDbType.VarChar).Value = enimi.Substring(0,3).ToLower() + snimi.Substring(0,5).ToLower();
+                komento.Parameters.Add("@ktu",MySqlDbType.VarChar).Value = enimi.Substring(0,3).ToLower() + snimi.Substring(0,5).ToLower();
             }
             if(ssana !="")
             {
-                komento.Parameters.Add("@ssa", MySqlDbType.VarChar).Value = ssana;
+                komento.Parameters.Add("@ssa", MySqlDbType.VarChar).Value = eCryptography.Encrypt(ssana);
             }
             else
             {
-                komento.Parameters.Add("@ssa", MySqlDbType.VarChar).Value = "h7fgDTa%03";
+                komento.Parameters.Add("@ssa", MySqlDbType.VarChar).Value = eCryptography.Encrypt(luoSalasana());
+                MessageBox.Show(luoSalasana());
             }
 
             yhteys.avaaYhteys();
             if(komento.ExecuteNonQuery() == 1)
             {
                 yhteys.suljeYhteys();
-                return false;
+                return true;
             }
+            else
+            { 
+                return false; 
+            }
+
         }
+
+        //luodaan salasana
+
+        public String luoSalasana()
+        {
+            char[] alpha = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMOPQRSTUVWXYZ!?@#&%€$+-0123456789".ToCharArray();
+            Random satunnaisluku = new Random();
+            String salasana = "";
+            for (int i = 0; i < 1; i++)
+            {
+                int indeksi = satunnaisluku.Next(alpha.Length);
+                salasana += alpha[indeksi];
+            }
+            return salasana;
+        }
+
+        //funktio asiakastietojen etsimiseen
         public DataTable haeAsiakkaat()
         {
-            MySqlCommand komento = new MySqlCommand("SELECT Etunimi, Sukunimi, Lahiosoite, Postinumero, Postitoimipaika, kayttajanimi FROM asiakkaat", yhteys.OtaYhteys());
+            MySqlCommand komento = new MySqlCommand("SELECT Etunimi, Sukunimi, Lahiosoite, Postinumero, Postitoimipaikka, kayttajanimi FROM asiakkaat", yhteys.OtaYhteys());
             MySqlDataAdapter adapteri = new MySqlDataAdapter();
             DataTable taulu = new DataTable();
 
@@ -68,7 +93,7 @@ namespace hotelli
         {
             MySqlCommand komento = new MySqlCommand();
             String paivityskysely = "UPDATE `asiakkaat` SET `Etunimi` = @enm," +
-                "`Sukunimi` = @snm, `Lahiosoite` = @oso, `Postinumero` = @pno, `Postitoimipaikka` = @ptp" +
+                "`Sukunimi` = @snm, `Lahiosoite` = @oso, `Postinumero` = @pno, `Postitoimipaikka` = @ptp " +
                 "WHERE kayttajanimi = @ktu";
             komento.CommandText = paivityskysely;
             komento.Connection = yhteys.OtaYhteys();
@@ -102,7 +127,7 @@ namespace hotelli
 
 
             yhteys.avaaYhteys();
-            if (komento.ExecuteNonQuery() ==1)
+            if (komento.ExecuteNonQuery() == 1)
             {
                 yhteys.suljeYhteys();
                 return true;
