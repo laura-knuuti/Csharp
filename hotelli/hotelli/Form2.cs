@@ -41,8 +41,13 @@ namespace hotelli
 
         private void hallitseHuoneitaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Huoneidenhallinta hhlomake = new Huoneidenhallinta();
+            HuoneidenHallinta hhlomake = new HuoneidenHallinta();
             hhlomake.ShowDialog();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

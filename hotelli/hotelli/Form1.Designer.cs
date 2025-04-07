@@ -91,7 +91,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkCyan;
-            this.ClientSize = new System.Drawing.Size(800, 533);
+            this.ClientSize = new System.Drawing.Size(670, 450);
             this.Controls.Add(this.salasanaLB);
             this.Controls.Add(this.kayttajaLB);
             this.Controls.Add(this.salasanaTB);
