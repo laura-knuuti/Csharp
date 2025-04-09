@@ -35,7 +35,7 @@ namespace hotelli
 
         private void hallitseVarauksiaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Varauksenhallinta vhlomake = new Varauksenhallinta();
+            VaraustenHallinta vhlomake = new VaraustenHallinta();
             vhlomake.ShowDialog();
         }
 

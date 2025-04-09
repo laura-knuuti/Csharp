@@ -13,5 +13,8 @@
     <Compile Update="HuoneidenHallinta.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="VaraustenHallinta.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>
