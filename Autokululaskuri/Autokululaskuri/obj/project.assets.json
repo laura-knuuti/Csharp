@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\laura\\OneDrive\\Työpöytä\\C# harjoituksia\\C# harjoituksia\\Autokululaskuri\\Autokululaskuri\\Autokululaskuri.csproj",
+      "projectUniqueName": "C:\\Users\\laura\\source\\repos\\Autokululaskuri\\Autokululaskuri\\Autokululaskuri.csproj",
       "projectName": "Autokululaskuri",
-      "projectPath": "C:\\Users\\laura\\OneDrive\\Työpöytä\\C# harjoituksia\\C# harjoituksia\\Autokululaskuri\\Autokululaskuri\\Autokululaskuri.csproj",
+      "projectPath": "C:\\Users\\laura\\source\\repos\\Autokululaskuri\\Autokululaskuri\\Autokululaskuri.csproj",
       "packagesPath": "C:\\Users\\laura\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\laura\\OneDrive\\Työpöytä\\C# harjoituksia\\C# harjoituksia\\Autokululaskuri\\Autokululaskuri\\obj\\",
+      "outputPath": "C:\\Users\\laura\\source\\repos\\Autokululaskuri\\Autokululaskuri\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

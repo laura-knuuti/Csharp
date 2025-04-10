@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("oppilaitosten_tiedot")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cbb2261ab5bca2315e4f3426c072c8d9907b6868")]
 [assembly: System.Reflection.AssemblyProductAttribute("oppilaitosten_tiedot")]
 [assembly: System.Reflection.AssemblyTitleAttribute("oppilaitosten_tiedot")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

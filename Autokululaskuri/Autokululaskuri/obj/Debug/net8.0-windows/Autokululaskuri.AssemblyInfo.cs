@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Autokululaskuri")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f226e6b485d7855c8b396897024cb658e9bc0899")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cbb2261ab5bca2315e4f3426c072c8d9907b6868")]
 [assembly: System.Reflection.AssemblyProductAttribute("Autokululaskuri")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Autokululaskuri")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

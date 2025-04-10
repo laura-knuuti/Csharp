@@ -38,7 +38,7 @@ namespace hotelli
             int numero = Convert.ToInt32(huonenroTB.Text);
             int tyyppi = Convert.ToInt32(huonetyyppiCB.SelectedValue.ToString());
             String puhelin = puhelinTB.Text;
-            if(huone.lisaaHuone(numero, tyyppi, puhelin, "Kyllä"))
+            if (huone.lisaaHuone(numero, tyyppi, puhelin, "Kyllä"))
             {
                 MessageBox.Show("Huone lisätty onnistuneesti", "Huoneen lisäys", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
@@ -81,7 +81,39 @@ namespace hotelli
                 if (huone.muokkaaHuonetta(numero, tyyppi, puhelin, vapaa))
                 {
                     MessageBox.Show("Huone muokattu onnistuneesti", "Huoneen muokkaus", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Huonetta ei pysty muokkaamaan", "Huoneen muokkaus", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Virhe: " + ex.Message, "Huoneen numero virhe", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            huoneetDG.DataSource = huone.haeHuoneet();
+        }
+
+        private void poistaBT_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                String huonenro = huonenroTB.Text;
+                if (huone.poistaHuone(huonenro))
+                {
+                    huoneetDG.DataSource = huone.haeHuoneet();
+                    MessageBox.Show("Huone poistettu onnistuneesti", "Huoneen poisto", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                tyhjennaBT.PerformClick();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Virhe " + ex.Message);
             }
         }
     }
 }
+
+
+
