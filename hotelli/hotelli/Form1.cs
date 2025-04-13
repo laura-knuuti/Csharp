@@ -35,10 +35,10 @@ namespace hotelli
 
             adapteri.SelectCommand = komento;
             adapteri.Fill(taulu);
-            
+
             //tarkistetaan onko käyttäjänimi tietokannassa, eli jos rivi tulee yhdistelmä olemassa
 
-            if(taulu.Rows.Count > 0)
+            if (taulu.Rows.Count > 0)
             {
                 //piilotetaan lomake ja avataan pääikkuna
                 this.Hide();
@@ -59,10 +59,16 @@ namespace hotelli
 
                 }
                 //kentät on täytetty, mutta yhdistelmää ei löydy
+                else
                 {
                     MessageBox.Show("Käyttäjänimeä tai salasanaa ei löydy", "Tietoja ei löydy", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
