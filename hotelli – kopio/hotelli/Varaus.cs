@@ -80,14 +80,23 @@ namespace hotelli
         {
             MySqlCommand komento = new MySqlCommand();
             String paivityskysely = "UPDATE `varaukset` SET `HuoneenNro` = @hnro," +
+<<<<<<< HEAD
                 "`AsiakasId` = @aid, `Sisaan` = @sis, `Ulos` = @ulo WHERE VarausId = @vid";
+=======
+                "`AsiakasId` = @aid, `Sisaan` = @sis, `Ulos` = @ulo" +
+             "WHERE VarausId = @vid";
+>>>>>>> ac8d35c9fd774df789e711954dd4290568ec6c38
             komento.CommandText = paivityskysely;
             komento.Connection = yhteys.OtaYhteys();
             komento.Parameters.Add("@hnro", MySqlDbType.Int32).Value = hnro;
             komento.Parameters.Add("@aid", MySqlDbType.Int32).Value = asid;
             komento.Parameters.Add("@sis", MySqlDbType.Date).Value = sisaan;
             komento.Parameters.Add("@ulo", MySqlDbType.Date).Value = ulos;
+<<<<<<< HEAD
             komento.Parameters.Add("@vid", MySqlDbType.Int32).Value = vara;
+=======
+            komento.Parameters.Add("@ulo", MySqlDbType.Int32).Value = vara;
+>>>>>>> ac8d35c9fd774df789e711954dd4290568ec6c38
 
             yhteys.avaaYhteys();
             if (komento.ExecuteNonQuery() == 1)
@@ -122,6 +131,7 @@ namespace hotelli
                 return false;
             }
         }
+<<<<<<< HEAD
 
         //funktion kutsussa annetaan valittu sisääntulo ja uloslähtö sekä huoneen numero
         public bool tarkistaPaiva(DateTime sis, DateTime ulo, int huone)
@@ -168,5 +178,7 @@ namespace hotelli
             }
             return onValissa;
         }
+=======
+>>>>>>> ac8d35c9fd774df789e711954dd4290568ec6c38
     }
 }

@@ -126,7 +126,11 @@ namespace hotelli
             public DataTable tyypillisetHuoneet(int htype)
             {
             MySqlCommand komento = new MySqlCommand();
+<<<<<<< HEAD
             String lisayskysely = "SELECT * from huoneet WHERE Huonetyyppi = @hty AND Vapaa = 'Kyllä'";
+=======
+            String lisayskysely = "SELECT * from huoneet WHERE Huonetyyppi = @hty AND Vapaa = 'Kyllä";
+>>>>>>> ac8d35c9fd774df789e711954dd4290568ec6c38
             komento.CommandText = lisayskysely;
             komento.Connection = yhteys.OtaYhteys();
             komento.Parameters.Add("@hty", MySqlDbType.Int32).Value = htype;

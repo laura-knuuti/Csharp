@@ -10,7 +10,11 @@ using System.Windows.Forms;
 
 namespace hotelli
 {
+<<<<<<< HEAD
     public partial class VaraustenHallinta : Form
+=======
+    public partial class VaraustenHallinta: Form
+>>>>>>> ac8d35c9fd774df789e711954dd4290568ec6c38
     {
         Huone huone = new Huone();
         Asiakas asiakas = new Asiakas();
@@ -93,7 +97,11 @@ namespace hotelli
                     MessageBox.Show("Huonetta ei pystytty muokkaamaan", "Huoneen muokkaus", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+<<<<<<< HEAD
             catch (Exception ex)
+=======
+            catch (Exception ex) 
+>>>>>>> ac8d35c9fd774df789e711954dd4290568ec6c38
             {
                 MessageBox.Show("Virhe " + ex.Message, "Huoneen numero virhe", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -145,6 +153,7 @@ namespace hotelli
         {
 
         }
+<<<<<<< HEAD
 
         private void ulosDTP_ValueChanged(object sender, EventArgs e)
         {
@@ -168,5 +177,7 @@ namespace hotelli
             sisaanDTP.Value = DateTime.Now;
             ulosDTP.Value = DateTime.Now;
         }
+=======
+>>>>>>> ac8d35c9fd774df789e711954dd4290568ec6c38
     }
 }
